@@ -39,6 +39,9 @@ captured roughly 40% of observed clicks.
 See the [stakeholder HTML report](reports/stakeholder_case_study_report.html)
 for the complete business summary, model comparison, risks, and recommendations.
 
+Live report after GitHub Pages is enabled:
+[namees-albayati.github.io/shopspark-click-prediction-ensembles](https://namees-albayati.github.io/shopspark-click-prediction-ensembles/)
+
 ## Workflow
 
 1. Join impression, product, and user datasets.
@@ -128,4 +131,3 @@ and large generated CSVs are intentionally excluded from Git.
   and an online A/B test.
 - The case narrative states 704 catalog products, while the supplied catalog
   contains 1,200 rows; this analysis reports the observed data.
-
