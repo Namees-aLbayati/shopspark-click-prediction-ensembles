@@ -204,6 +204,34 @@
         <div class="bar-row"><div class="bar-label">1 · Lowest</div><div class="track"><div class="fill" style="width:2.2%"></div></div><div class="bar-value">0.62%</div></div>
       </div>
       <div class="callout"><strong>Interpretation:</strong> the monotonic rise in observed CTR across score groups shows that the probability score is useful for prioritization. A product with a higher score should generally be ranked ahead of one with a lower score, subject to inventory, margin, diversity, and policy constraints.</div>
+      <h3>Products most likely to be clicked</h3>
+      <p>Products are ranked by their <strong>average predicted click probability</strong> in the unseen test period. A minimum of 30 impressions is required so that one or two unusually high scores do not dominate the list.</p>
+      <table>
+        <thead><tr><th>Product</th><th>Category</th><th>Test impressions</th><th>Predicted CTR</th><th>Observed CTR</th></tr></thead>
+        <tbody>
+          <tr><td>Samsung Bluetooth Speaker SE</td><td>Electronics</td><td>60</td><td>36.15%</td><td>30.00%</td></tr>
+          <tr><td>adidas Core Slim Fit Jeans</td><td>Fashion</td><td>44</td><td>35.77%</td><td>27.27%</td></tr>
+          <tr><td>Kraft Heinz Low Sugar Snack Variety Pack</td><td>Grocery</td><td>80</td><td>30.84%</td><td>26.25%</td></tr>
+          <tr><td>Apple Wireless Earbuds SE</td><td>Electronics</td><td>47</td><td>30.81%</td><td>25.53%</td></tr>
+          <tr><td>Sony Bluetooth Speaker Gen 2</td><td>Electronics</td><td>52</td><td>29.68%</td><td>21.15%</td></tr>
+          <tr><td>Apple Smartwatch Ultra</td><td>Electronics</td><td>75</td><td>29.12%</td><td>33.33%</td></tr>
+          <tr><td>Calvin Klein Heritage Graphic Tee</td><td>Fashion</td><td>58</td><td>28.67%</td><td>27.59%</td></tr>
+          <tr><td>Samsung Wireless Earbuds Plus</td><td>Electronics</td><td>74</td><td>27.50%</td><td>37.84%</td></tr>
+        </tbody>
+      </table>
+      <h3>Categories with the greatest predicted click opportunity</h3>
+      <table>
+        <thead><tr><th>Category</th><th>Test impressions</th><th>Average predicted CTR</th><th>Observed CTR</th></tr></thead>
+        <tbody>
+          <tr><td>Fashion</td><td>9,335</td><td>11.60%</td><td>11.94%</td></tr>
+          <tr><td>Electronics</td><td>11,888</td><td>10.74%</td><td>11.03%</td></tr>
+          <tr><td>Grocery</td><td>10,659</td><td>9.36%</td><td>9.78%</td></tr>
+          <tr><td>Home</td><td>8,353</td><td>5.43%</td><td>5.70%</td></tr>
+          <tr><td>Beauty</td><td>7,543</td><td>3.96%</td><td>3.78%</td></tr>
+          <tr><td>Sports</td><td>7,750</td><td>3.72%</td><td>4.09%</td></tr>
+        </tbody>
+      </table>
+      <div class="callout warning"><strong>How to use this list:</strong> these are portfolio-level averages, not universal recommendations. The production decision must score each eligible product for the current user and context. A product that ranks highly overall may still rank lower for a particular shopper, page, or moment.</div>
     </section>
 
     <section>
