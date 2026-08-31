@@ -95,8 +95,34 @@ derived from training aggregates to prevent target leakage.
 │   ├── 04_modeling/
 │   └── 05_reporting/
 ├── reports/stakeholder_case_study_report.html
-├── src/
+├── src/                               # Reusable Python package
+│   ├── config.py
+│   ├── data.py
+│   ├── preprocessing/cleaning.py
+│   ├── features/engineering.py
+│   └── modeling/
+│       ├── evaluation.py
+│       └── ranking.py
+├── tests/
 └── requirements.txt
+```
+
+## Reusable Python API
+
+The notebooks provide the narrative analysis; shared logic lives in `src/`:
+
+```python
+from src.config import find_project_root, project_paths
+from src.data import load_raw_data, join_source_data, validate_chronological_splits
+from src.preprocessing import clean_modeling_frame, iqr_outlier_report
+from src.features import add_row_features, add_training_history
+from src.modeling import probability_metrics, add_score_deciles, decile_summary
+```
+
+Run the utility tests with:
+
+```bash
+pytest -q
 ```
 
 ## Run locally
